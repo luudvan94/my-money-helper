@@ -18,10 +18,6 @@
 		CDDA3F1922C24D010078D7BC /* MyMoneyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F1822C24D010078D7BC /* MyMoneyHelperTests.swift */; };
 		CDDA3F2422C24D010078D7BC /* MyMoneyHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */; };
 		CDDA3F3422C250A40078D7BC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F3322C250A40078D7BC /* R.generated.swift */; };
-		CDDA3F3622C255B10078D7BC /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3522C255B10078D7BC /* Controller */; };
-		CDDA3F3822C255C50078D7BC /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3722C255C50078D7BC /* ViewModel */; };
-		CDDA3F3A22C255CE0078D7BC /* Model in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3922C255CE0078D7BC /* Model */; };
-		CDDA3F3C22C255D60078D7BC /* Service in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3B22C255D60078D7BC /* Service */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +60,6 @@
 		CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoneyHelperUITests.swift; sourceTree = "<group>"; };
 		CDDA3F2522C24D010078D7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDDA3F3322C250A40078D7BC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		CDDA3F3522C255B10078D7BC /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
-		CDDA3F3722C255C50078D7BC /* ViewModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModel; sourceTree = "<group>"; };
-		CDDA3F3922C255CE0078D7BC /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
-		CDDA3F3B22C255D60078D7BC /* Service */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Service; sourceTree = "<group>"; };
 		D4F99C537300DE1853E832AC /* Pods_MyMoneyHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneyHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,10 +139,10 @@
 		CDDA3F0222C24CFF0078D7BC /* MyMoneyHelper */ = {
 			isa = PBXGroup;
 			children = (
-				CDDA3F3B22C255D60078D7BC /* Service */,
-				CDDA3F3922C255CE0078D7BC /* Model */,
-				CDDA3F3722C255C50078D7BC /* ViewModel */,
-				CDDA3F3522C255B10078D7BC /* Controller */,
+				CDDA3F4022C2567A0078D7BC /* Service */,
+				CDDA3F3F22C256760078D7BC /* View */,
+				CDDA3F3E22C2566F0078D7BC /* ViewModel */,
+				CDDA3F3D22C256430078D7BC /* Controller */,
 				CDDA3F3322C250A40078D7BC /* R.generated.swift */,
 				CDDA3F0322C24CFF0078D7BC /* AppDelegate.swift */,
 				CDDA3F0522C24CFF0078D7BC /* ViewController.swift */,
@@ -178,6 +170,34 @@
 				CDDA3F2522C24D010078D7BC /* Info.plist */,
 			);
 			path = MyMoneyHelperUITests;
+			sourceTree = "<group>";
+		};
+		CDDA3F3D22C256430078D7BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDDA3F3E22C2566F0078D7BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDDA3F3F22C256760078D7BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDDA3F4022C2567A0078D7BC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,12 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDDA3F3C22C255D60078D7BC /* Service in Resources */,
-				CDDA3F3A22C255CE0078D7BC /* Model in Resources */,
-				CDDA3F3822C255C50078D7BC /* ViewModel in Resources */,
 				CDDA3F0E22C24D000078D7BC /* LaunchScreen.storyboard in Resources */,
 				CDDA3F0B22C24D000078D7BC /* Assets.xcassets in Resources */,
-				CDDA3F3622C255B10078D7BC /* Controller in Resources */,
 				CDDA3F0922C24CFF0078D7BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
