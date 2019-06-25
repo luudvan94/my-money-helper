@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		347F602792AC422FA5F82D7F /* Pods_MyMoneyHelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A464A73A5722ADAC72B1C88F /* Pods_MyMoneyHelperTests.framework */; };
+		3D3C614296D2210A60A4B94F /* Pods_MyMoneyHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA535C5B26C14E1472C0C2 /* Pods_MyMoneyHelper.framework */; };
+		6B035A62D7F7AC1D86456875 /* Pods_MyMoneyHelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F99C537300DE1853E832AC /* Pods_MyMoneyHelperUITests.framework */; };
+		CDDA3F0422C24CFF0078D7BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F0322C24CFF0078D7BC /* AppDelegate.swift */; };
+		CDDA3F0622C24CFF0078D7BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F0522C24CFF0078D7BC /* ViewController.swift */; };
+		CDDA3F0922C24CFF0078D7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F0722C24CFF0078D7BC /* Main.storyboard */; };
+		CDDA3F0B22C24D000078D7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F0A22C24D000078D7BC /* Assets.xcassets */; };
+		CDDA3F0E22C24D000078D7BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F0C22C24D000078D7BC /* LaunchScreen.storyboard */; };
+		CDDA3F1922C24D010078D7BC /* MyMoneyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F1822C24D010078D7BC /* MyMoneyHelperTests.swift */; };
+		CDDA3F2422C24D010078D7BC /* MyMoneyHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */; };
+		CDDA3F3422C250A40078D7BC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F3322C250A40078D7BC /* R.generated.swift */; };
+		CDDA3F3622C255B10078D7BC /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3522C255B10078D7BC /* Controller */; };
+		CDDA3F3822C255C50078D7BC /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3722C255C50078D7BC /* ViewModel */; };
+		CDDA3F3A22C255CE0078D7BC /* Model in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3922C255CE0078D7BC /* Model */; };
+		CDDA3F3C22C255D60078D7BC /* Service in Resources */ = {isa = PBXBuildFile; fileRef = CDDA3F3B22C255D60078D7BC /* Service */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDDA3F1522C24D010078D7BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDDA3EF822C24CFF0078D7BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDDA3EFF22C24CFF0078D7BC;
+			remoteInfo = MyMoneyHelper;
+		};
+		CDDA3F2022C24D010078D7BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDDA3EF822C24CFF0078D7BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDDA3EFF22C24CFF0078D7BC;
+			remoteInfo = MyMoneyHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02477D91466402EAA39C0AC9 /* Pods-MyMoneyHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneyHelperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D5B668CC18C4CC74A84ECB5 /* Pods-MyMoneyHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneyHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		1A98082F5738D27274D25905 /* Pods-MyMoneyHelperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneyHelperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoneyHelperUITests/Pods-MyMoneyHelperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68314FAD85BCF70AE3361379 /* Pods-MyMoneyHelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneyHelperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoneyHelperUITests/Pods-MyMoneyHelperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A7390F58FBF01C174BDC26A /* Pods-MyMoneyHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneyHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper.release.xcconfig"; sourceTree = "<group>"; };
+		9CBA535C5B26C14E1472C0C2 /* Pods_MyMoneyHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneyHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A464A73A5722ADAC72B1C88F /* Pods_MyMoneyHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneyHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE02B371FCF40BFDCC3DF954 /* Pods-MyMoneyHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneyHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDDA3F0022C24CFF0078D7BC /* MyMoneyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMoneyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDA3F0322C24CFF0078D7BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDDA3F0522C24CFF0078D7BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDDA3F0822C24CFF0078D7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDDA3F0A22C24D000078D7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDDA3F0D22C24D000078D7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDDA3F0F22C24D000078D7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDA3F1422C24D010078D7BC /* MyMoneyHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMoneyHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDA3F1822C24D010078D7BC /* MyMoneyHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoneyHelperTests.swift; sourceTree = "<group>"; };
+		CDDA3F1A22C24D010078D7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDA3F1F22C24D010078D7BC /* MyMoneyHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMoneyHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoneyHelperUITests.swift; sourceTree = "<group>"; };
+		CDDA3F2522C24D010078D7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDA3F3322C250A40078D7BC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CDDA3F3522C255B10078D7BC /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
+		CDDA3F3722C255C50078D7BC /* ViewModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModel; sourceTree = "<group>"; };
+		CDDA3F3922C255CE0078D7BC /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		CDDA3F3B22C255D60078D7BC /* Service */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Service; sourceTree = "<group>"; };
+		D4F99C537300DE1853E832AC /* Pods_MyMoneyHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneyHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDDA3EFD22C24CFF0078D7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3C614296D2210A60A4B94F /* Pods_MyMoneyHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDA3F1122C24D010078D7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347F602792AC422FA5F82D7F /* Pods_MyMoneyHelperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDA3F1C22C24D010078D7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B035A62D7F7AC1D86456875 /* Pods_MyMoneyHelperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58DACF774D2BB21E0BE84DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA535C5B26C14E1472C0C2 /* Pods_MyMoneyHelper.framework */,
+				A464A73A5722ADAC72B1C88F /* Pods_MyMoneyHelperTests.framework */,
+				D4F99C537300DE1853E832AC /* Pods_MyMoneyHelperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A06B4A2AB0064A24266FD024 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D5B668CC18C4CC74A84ECB5 /* Pods-MyMoneyHelper.debug.xcconfig */,
+				7A7390F58FBF01C174BDC26A /* Pods-MyMoneyHelper.release.xcconfig */,
+				AE02B371FCF40BFDCC3DF954 /* Pods-MyMoneyHelperTests.debug.xcconfig */,
+				02477D91466402EAA39C0AC9 /* Pods-MyMoneyHelperTests.release.xcconfig */,
+				1A98082F5738D27274D25905 /* Pods-MyMoneyHelperUITests.debug.xcconfig */,
+				68314FAD85BCF70AE3361379 /* Pods-MyMoneyHelperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDDA3EF722C24CFF0078D7BC = {
+			isa = PBXGroup;
+			children = (
+				CDDA3F0222C24CFF0078D7BC /* MyMoneyHelper */,
+				CDDA3F1722C24D010078D7BC /* MyMoneyHelperTests */,
+				CDDA3F2222C24D010078D7BC /* MyMoneyHelperUITests */,
+				CDDA3F0122C24CFF0078D7BC /* Products */,
+				A06B4A2AB0064A24266FD024 /* Pods */,
+				58DACF774D2BB21E0BE84DF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDDA3F0122C24CFF0078D7BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA3F0022C24CFF0078D7BC /* MyMoneyHelper.app */,
+				CDDA3F1422C24D010078D7BC /* MyMoneyHelperTests.xctest */,
+				CDDA3F1F22C24D010078D7BC /* MyMoneyHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDDA3F0222C24CFF0078D7BC /* MyMoneyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA3F3B22C255D60078D7BC /* Service */,
+				CDDA3F3922C255CE0078D7BC /* Model */,
+				CDDA3F3722C255C50078D7BC /* ViewModel */,
+				CDDA3F3522C255B10078D7BC /* Controller */,
+				CDDA3F3322C250A40078D7BC /* R.generated.swift */,
+				CDDA3F0322C24CFF0078D7BC /* AppDelegate.swift */,
+				CDDA3F0522C24CFF0078D7BC /* ViewController.swift */,
+				CDDA3F0722C24CFF0078D7BC /* Main.storyboard */,
+				CDDA3F0A22C24D000078D7BC /* Assets.xcassets */,
+				CDDA3F0C22C24D000078D7BC /* LaunchScreen.storyboard */,
+				CDDA3F0F22C24D000078D7BC /* Info.plist */,
+			);
+			path = MyMoneyHelper;
+			sourceTree = "<group>";
+		};
+		CDDA3F1722C24D010078D7BC /* MyMoneyHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA3F1822C24D010078D7BC /* MyMoneyHelperTests.swift */,
+				CDDA3F1A22C24D010078D7BC /* Info.plist */,
+			);
+			path = MyMoneyHelperTests;
+			sourceTree = "<group>";
+		};
+		CDDA3F2222C24D010078D7BC /* MyMoneyHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */,
+				CDDA3F2522C24D010078D7BC /* Info.plist */,
+			);
+			path = MyMoneyHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDDA3EFF22C24CFF0078D7BC /* MyMoneyHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDDA3F2822C24D010078D7BC /* Build configuration list for PBXNativeTarget "MyMoneyHelper" */;
+			buildPhases = (
+				7D5D049B39D56EA98EFC255A /* [CP] Check Pods Manifest.lock */,
+				CDDA3F3222C24F3A0078D7BC /* ShellScript */,
+				CDDA3EFC22C24CFF0078D7BC /* Sources */,
+				CDDA3EFD22C24CFF0078D7BC /* Frameworks */,
+				CDDA3EFE22C24CFF0078D7BC /* Resources */,
+				CDDA3F3122C24E4E0078D7BC /* ShellScript */,
+				95FF17B398A61A5EF3868990 /* [CP] Embed Pods Frameworks */,
+				12021C071C6FA1098DB4419C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMoneyHelper;
+			productName = MyMoneyHelper;
+			productReference = CDDA3F0022C24CFF0078D7BC /* MyMoneyHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDDA3F1322C24D010078D7BC /* MyMoneyHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDDA3F2B22C24D010078D7BC /* Build configuration list for PBXNativeTarget "MyMoneyHelperTests" */;
+			buildPhases = (
+				7ED82BFB2A81A06D0F33DA43 /* [CP] Check Pods Manifest.lock */,
+				CDDA3F1022C24D010078D7BC /* Sources */,
+				CDDA3F1122C24D010078D7BC /* Frameworks */,
+				CDDA3F1222C24D010078D7BC /* Resources */,
+				4E1CA2DE2D943CE785579330 /* [CP] Embed Pods Frameworks */,
+				CC336A9BBC46FA792B7363FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDDA3F1622C24D010078D7BC /* PBXTargetDependency */,
+			);
+			name = MyMoneyHelperTests;
+			productName = MyMoneyHelperTests;
+			productReference = CDDA3F1422C24D010078D7BC /* MyMoneyHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDDA3F1E22C24D010078D7BC /* MyMoneyHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDDA3F2E22C24D010078D7BC /* Build configuration list for PBXNativeTarget "MyMoneyHelperUITests" */;
+			buildPhases = (
+				7081F6C5E46811B229D802EA /* [CP] Check Pods Manifest.lock */,
+				CDDA3F1B22C24D010078D7BC /* Sources */,
+				CDDA3F1C22C24D010078D7BC /* Frameworks */,
+				CDDA3F1D22C24D010078D7BC /* Resources */,
+				9CA2D198BD28C283BF727A66 /* [CP] Embed Pods Frameworks */,
+				806681E9218D21639D70ECFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDDA3F2122C24D010078D7BC /* PBXTargetDependency */,
+			);
+			name = MyMoneyHelperUITests;
+			productName = MyMoneyHelperUITests;
+			productReference = CDDA3F1F22C24D010078D7BC /* MyMoneyHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDDA3EF822C24CFF0078D7BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = luuvan;
+				TargetAttributes = {
+					CDDA3EFF22C24CFF0078D7BC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					CDDA3F1322C24D010078D7BC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CDDA3EFF22C24CFF0078D7BC;
+					};
+					CDDA3F1E22C24D010078D7BC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CDDA3EFF22C24CFF0078D7BC;
+					};
+				};
+			};
+			buildConfigurationList = CDDA3EFB22C24CFF0078D7BC /* Build configuration list for PBXProject "MyMoneyHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDDA3EF722C24CFF0078D7BC;
+			productRefGroup = CDDA3F0122C24CFF0078D7BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDDA3EFF22C24CFF0078D7BC /* MyMoneyHelper */,
+				CDDA3F1322C24D010078D7BC /* MyMoneyHelperTests */,
+				CDDA3F1E22C24D010078D7BC /* MyMoneyHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDDA3EFE22C24CFF0078D7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDA3F3C22C255D60078D7BC /* Service in Resources */,
+				CDDA3F3A22C255CE0078D7BC /* Model in Resources */,
+				CDDA3F3822C255C50078D7BC /* ViewModel in Resources */,
+				CDDA3F0E22C24D000078D7BC /* LaunchScreen.storyboard in Resources */,
+				CDDA3F0B22C24D000078D7BC /* Assets.xcassets in Resources */,
+				CDDA3F3622C255B10078D7BC /* Controller in Resources */,
+				CDDA3F0922C24CFF0078D7BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDA3F1222C24D010078D7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDA3F1D22C24D010078D7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12021C071C6FA1098DB4419C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1CA2DE2D943CE785579330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7081F6C5E46811B229D802EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D5D049B39D56EA98EFC255A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED82BFB2A81A06D0F33DA43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		806681E9218D21639D70ECFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperUITests/Pods-MyMoneyHelperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95FF17B398A61A5EF3868990 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA2D198BD28C283BF727A66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperUITests/Pods-MyMoneyHelperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC336A9BBC46FA792B7363FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDDA3F3122C24E4E0078D7BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CDDA3F3222C24F3A0078D7BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDDA3EFC22C24CFF0078D7BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDA3F0622C24CFF0078D7BC /* ViewController.swift in Sources */,
+				CDDA3F0422C24CFF0078D7BC /* AppDelegate.swift in Sources */,
+				CDDA3F3422C250A40078D7BC /* R.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDA3F1022C24D010078D7BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDA3F1922C24D010078D7BC /* MyMoneyHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDA3F1B22C24D010078D7BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDA3F2422C24D010078D7BC /* MyMoneyHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDDA3F1622C24D010078D7BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDDA3EFF22C24CFF0078D7BC /* MyMoneyHelper */;
+			targetProxy = CDDA3F1522C24D010078D7BC /* PBXContainerItemProxy */;
+		};
+		CDDA3F2122C24D010078D7BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDDA3EFF22C24CFF0078D7BC /* MyMoneyHelper */;
+			targetProxy = CDDA3F2022C24D010078D7BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDDA3F0722C24CFF0078D7BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDA3F0822C24CFF0078D7BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDDA3F0C22C24D000078D7BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDA3F0D22C24D000078D7BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDDA3F2622C24D010078D7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDDA3F2722C24D010078D7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDDA3F2922C24D010078D7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5B668CC18C4CC74A84ECB5 /* Pods-MyMoneyHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMoneyHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luuvan.MyMoneyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDDA3F2A22C24D010078D7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7390F58FBF01C174BDC26A /* Pods-MyMoneyHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMoneyHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luuvan.MyMoneyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDDA3F2C22C24D010078D7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE02B371FCF40BFDCC3DF954 /* Pods-MyMoneyHelperTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMoneyHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luuvan.MyMoneyHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMoneyHelper.app/MyMoneyHelper";
+			};
+			name = Debug;
+		};
+		CDDA3F2D22C24D010078D7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02477D91466402EAA39C0AC9 /* Pods-MyMoneyHelperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMoneyHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luuvan.MyMoneyHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMoneyHelper.app/MyMoneyHelper";
+			};
+			name = Release;
+		};
+		CDDA3F2F22C24D010078D7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A98082F5738D27274D25905 /* Pods-MyMoneyHelperUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMoneyHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luuvan.MyMoneyHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyMoneyHelper;
+			};
+			name = Debug;
+		};
+		CDDA3F3022C24D010078D7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68314FAD85BCF70AE3361379 /* Pods-MyMoneyHelperUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMoneyHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luuvan.MyMoneyHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyMoneyHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDDA3EFB22C24CFF0078D7BC /* Build configuration list for PBXProject "MyMoneyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDA3F2622C24D010078D7BC /* Debug */,
+				CDDA3F2722C24D010078D7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDDA3F2822C24D010078D7BC /* Build configuration list for PBXNativeTarget "MyMoneyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDA3F2922C24D010078D7BC /* Debug */,
+				CDDA3F2A22C24D010078D7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDDA3F2B22C24D010078D7BC /* Build configuration list for PBXNativeTarget "MyMoneyHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDA3F2C22C24D010078D7BC /* Debug */,
+				CDDA3F2D22C24D010078D7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDDA3F2E22C24D010078D7BC /* Build configuration list for PBXNativeTarget "MyMoneyHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDA3F2F22C24D010078D7BC /* Debug */,
+				CDDA3F3022C24D010078D7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDDA3EF822C24CFF0078D7BC /* Project object */;
+}
