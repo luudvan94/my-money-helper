@@ -10,15 +10,21 @@ target 'MyMoneyHelper' do
   # Pods for MyMoneyHelper
 
   pod 'R.swift'
+  pod 'RealmSwift'
 
   target 'MyMoneyHelperTests' do
     inherit! :search_paths
     # Pods for testing
+
+    pod 'Quick'
+    pod 'Nimble'
   end
 
   target 'MyMoneyHelperUITests' do
     inherit! :search_paths
     # Pods for testing
+
+
   end
 
 end

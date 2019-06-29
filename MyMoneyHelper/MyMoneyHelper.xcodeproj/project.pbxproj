@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		CDDA3F1922C24D010078D7BC /* MyMoneyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F1822C24D010078D7BC /* MyMoneyHelperTests.swift */; };
 		CDDA3F2422C24D010078D7BC /* MyMoneyHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */; };
 		CDDA3F3422C250A40078D7BC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F3322C250A40078D7BC /* R.generated.swift */; };
+		CDDA3F4322C7166D0078D7BC /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F4222C7166D0078D7BC /* Wallet.swift */; };
+		CDDA3F4522C717F30078D7BC /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F4422C717F30078D7BC /* Payment.swift */; };
+		CDDA3F4722C719070078D7BC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F4622C719070078D7BC /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		CDDA3F2322C24D010078D7BC /* MyMoneyHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoneyHelperUITests.swift; sourceTree = "<group>"; };
 		CDDA3F2522C24D010078D7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDDA3F3322C250A40078D7BC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CDDA3F4222C7166D0078D7BC /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		CDDA3F4422C717F30078D7BC /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		CDDA3F4622C719070078D7BC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D4F99C537300DE1853E832AC /* Pods_MyMoneyHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneyHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +145,7 @@
 		CDDA3F0222C24CFF0078D7BC /* MyMoneyHelper */ = {
 			isa = PBXGroup;
 			children = (
+				CDDA3F4122C7165D0078D7BC /* Model */,
 				CDDA3F4022C2567A0078D7BC /* Service */,
 				CDDA3F3F22C256760078D7BC /* View */,
 				CDDA3F3E22C2566F0078D7BC /* ViewModel */,
@@ -200,6 +207,16 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		CDDA3F4122C7165D0078D7BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA3F4222C7166D0078D7BC /* Wallet.swift */,
+				CDDA3F4422C717F30078D7BC /* Payment.swift */,
+				CDDA3F4622C719070078D7BC /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,7 +231,6 @@
 				CDDA3EFE22C24CFF0078D7BC /* Resources */,
 				CDDA3F3122C24E4E0078D7BC /* ShellScript */,
 				95FF17B398A61A5EF3868990 /* [CP] Embed Pods Frameworks */,
-				12021C071C6FA1098DB4419C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +250,6 @@
 				CDDA3F1122C24D010078D7BC /* Frameworks */,
 				CDDA3F1222C24D010078D7BC /* Resources */,
 				4E1CA2DE2D943CE785579330 /* [CP] Embed Pods Frameworks */,
-				CC336A9BBC46FA792B7363FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,8 +269,6 @@
 				CDDA3F1B22C24D010078D7BC /* Sources */,
 				CDDA3F1C22C24D010078D7BC /* Frameworks */,
 				CDDA3F1D22C24D010078D7BC /* Resources */,
-				9CA2D198BD28C283BF727A66 /* [CP] Embed Pods Frameworks */,
-				806681E9218D21639D70ECFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,42 +351,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12021C071C6FA1098DB4419C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4E1CA2DE2D943CE785579330 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7081F6C5E46811B229D802EA /* [CP] Check Pods Manifest.lock */ = {
@@ -384,15 +376,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMoneyHelperUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7D5D049B39D56EA98EFC255A /* [CP] Check Pods Manifest.lock */ = {
@@ -403,15 +398,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMoneyHelper-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7ED82BFB2A81A06D0F33DA43 /* [CP] Check Pods Manifest.lock */ = {
@@ -422,34 +420,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMoneyHelperTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		806681E9218D21639D70ECFC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperUITests/Pods-MyMoneyHelperUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95FF17B398A61A5EF3868990 /* [CP] Embed Pods Frameworks */ = {
@@ -458,55 +440,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CA2D198BD28C283BF727A66 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperUITests/Pods-MyMoneyHelperUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC336A9BBC46FA792B7363FC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoneyHelperTests/Pods-MyMoneyHelperTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMoneyHelper/Pods-MyMoneyHelper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDDA3F3122C24E4E0078D7BC /* ShellScript */ = {
@@ -552,9 +494,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDA3F4322C7166D0078D7BC /* Wallet.swift in Sources */,
 				CDDA3F0622C24CFF0078D7BC /* ViewController.swift in Sources */,
 				CDDA3F0422C24CFF0078D7BC /* AppDelegate.swift in Sources */,
 				CDDA3F3422C250A40078D7BC /* R.generated.swift in Sources */,
+				CDDA3F4522C717F30078D7BC /* Payment.swift in Sources */,
+				CDDA3F4722C719070078D7BC /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

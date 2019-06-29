@@ -16,44 +16,6 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.file` struct is generated, and contains static references to 4 files.
-  struct file {
-    /// Resource file `Controller`.
-    static let controller = Rswift.FileResource(bundle: R.hostingBundle, name: "Controller", pathExtension: "")
-    /// Resource file `Model`.
-    static let model = Rswift.FileResource(bundle: R.hostingBundle, name: "Model", pathExtension: "")
-    /// Resource file `Service`.
-    static let service = Rswift.FileResource(bundle: R.hostingBundle, name: "Service", pathExtension: "")
-    /// Resource file `ViewModel`.
-    static let viewModel = Rswift.FileResource(bundle: R.hostingBundle, name: "ViewModel", pathExtension: "")
-    
-    /// `bundle.url(forResource: "Controller", withExtension: "")`
-    static func controller(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.controller
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "Model", withExtension: "")`
-    static func model(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.model
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "Service", withExtension: "")`
-    static func service(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.service
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "ViewModel", withExtension: "")`
-    static func viewModel(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.viewModel
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    fileprivate init() {}
-  }
-  
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
