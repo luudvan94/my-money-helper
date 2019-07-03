@@ -12,6 +12,7 @@ import RealmSwift
 class Payment: Object {
     @objc dynamic var value: Double = 0.0
     @objc dynamic var detail = ""
+    @objc dynamic var name = ""
     @objc dynamic var time = Date()
     @objc dynamic var place = ""
     @objc dynamic var category: Category?

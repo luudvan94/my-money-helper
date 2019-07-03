@@ -13,5 +13,5 @@ class Wallet: Object {
     @objc dynamic var name = ""
     @objc dynamic var desc = ""
     let payments = List<Payment>()
+    @objc dynamic var lastestUpdate = Date()
 }
-
