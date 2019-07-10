@@ -46,11 +46,7 @@ class WalletControllerInMemorySpec: QuickSpec {
                     let wallet = Wallet()
                     wallet.name = "cash"
                     wallet.desc = "cash payment"
-                    do {
-                        try sut.add(wallet: wallet)
-                    } catch {
-                        
-                    }
+                    _ = sut.add(wallet: wallet)
                     
                     expect(testRealm.objects(Wallet.self).count).to(equal(1))
                     
@@ -59,24 +55,16 @@ class WalletControllerInMemorySpec: QuickSpec {
                 it("add 2 wallets to the Realm") {
                     expect(testRealm.objects(Wallet.self).count).to(equal(0))
                     
-                    do {
-                        try sut.add(wallet: wallet)
-                        try sut.add(wallet: anotherWallet)
-                    } catch {
-                        
-                    }
+                    _ = sut.add(wallet: wallet)
+                    _ = sut.add(wallet: anotherWallet)
                     
                     expect(testRealm.objects(Wallet.self).count).to(equal(2))
                 }
                 
                 it("load lastest wallet") {
                    
-                    do {
-                        try sut.add(wallet: wallet)
-                        try sut.add(wallet: anotherWallet)
-                    } catch {
-                        
-                    }
+                    _ = sut.add(wallet: wallet)
+                    _ = sut.add(wallet: anotherWallet)
                     
                     expect(sut.activeWallet).notTo(beNil())
                     expect(sut.activeWallet!.name).to(equal("check"))
@@ -84,28 +72,20 @@ class WalletControllerInMemorySpec: QuickSpec {
                 
                 it("remove wallet") {
                     
-                    do {
-                        try sut.add(wallet: wallet)
-                        try sut.add(wallet: anotherWallet)
-                    } catch {
-                        
-                    }
+                    _ = sut.add(wallet: wallet)
+                    _ = sut.add(wallet: anotherWallet)
                     
-                    try! sut.remove(wallet: anotherWallet)
+                    _ = sut.remove(wallet: anotherWallet)
                     
                     expect(testRealm.objects(Wallet.self).count).to(equal(1))
                 }
                 
                 it("load correct active wallet after remove current active wallet") {
                     
-                    do {
-                        try sut.add(wallet: wallet)
-                        try sut.add(wallet: anotherWallet)
-                    } catch {
-                        
-                    }
+                    _ = sut.add(wallet: wallet)
+                    _ = sut.add(wallet: anotherWallet)
                     
-                    try! sut.remove(wallet: anotherWallet)
+                    _ = sut.remove(wallet: anotherWallet)
                     
                     expect(sut.activeWallet).notTo(beNil())
                     expect(sut.activeWallet!.name).to(equal("cash"))
@@ -113,14 +93,10 @@ class WalletControllerInMemorySpec: QuickSpec {
                 
                 it("update active wallet name and detail") {
 
-                    do {
-                        try sut.add(wallet: wallet)
-                        try sut.add(wallet: anotherWallet)
-                    } catch {
-                        
-                    }
+                    _ = sut.add(wallet: wallet)
+                    _ = sut.add(wallet: anotherWallet)
 
-                    try! sut.update { wallet in
+                    _ = sut.update { wallet in
                         wallet.name = "cash of me"
                         wallet.desc = "cash of myself"
                     }
@@ -130,10 +106,10 @@ class WalletControllerInMemorySpec: QuickSpec {
                 }
                 
                 it("choose and display correct active wallet") {
-                    try! sut.add(wallet: wallet)
-                    try! sut.add(wallet: anotherWallet)
+                    _ = sut.add(wallet: wallet)
+                    _ = sut.add(wallet: anotherWallet)
                     
-                    try! sut.setCurrentWallet(wallet)
+                    _ = sut.setCurrentWallet(wallet)
                     
                     expect(sut.activeWallet).notTo(beNil())
                     expect(sut.activeWallet!.name).to(equal("cash"))

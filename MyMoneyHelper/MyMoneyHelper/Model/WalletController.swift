@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import RxSwift
 
 class WalletController {
     let realm: Realm!
@@ -29,37 +30,113 @@ class WalletController {
         self.init(realm: try Realm())
     }
     
-    func add(wallet: Wallet) throws {
-        try realm.write {
-            self.realm.add(wallet)
+    func add(wallet: Wallet) -> Bool {
+        do {
+            try realm.write {
+                self.realm.add(wallet)
+            }
+            self.currentWallet = wallet
+            
+            return true
+        } catch {
+            return false
         }
-        self.currentWallet = wallet
     }
     
-    func remove(wallet: Wallet) throws {
-        try realm.write {
-            self.realm.delete(wallet)
+    func remove(wallet: Wallet) -> Bool {
+        do {
+            try realm.write {
+                self.realm.delete(wallet)
+            }
+            self.currentWallet = latestUpdateWallet
+            
+            return true
+        } catch {
+            return false
         }
-        self.currentWallet = latestUpdateWallet
+        
     }
     
-    func update(_ handler: (Wallet) -> Void) throws {
+    func update(_ handler: (Wallet) -> Void) -> Wallet? {
         guard let wallet = self.currentWallet else {
-            return
+            return nil
         }
         
-        try realm.write {
-            wallet.lastestUpdate = Date()
-            handler(wallet)
+        do {
+            try realm.write {
+                wallet.lastestUpdate = Date()
+                handler(wallet)
+            }
+            return wallet
+        } catch {
+            return nil
+        }
+    }
+    
+    func setCurrentWallet(_ wallet: Wallet) -> Wallet? {
+        do {
+            try realm.write {
+                wallet.lastestUpdate = Date()
+            }
+            self.currentWallet = wallet
+            
+            return wallet
+        } catch {
+            return nil
         }
         
     }
     
-    func setCurrentWallet(_ wallet: Wallet) throws {
-        try realm.write {
-            wallet.lastestUpdate = Date()
+}
+
+extension WalletController: ReactiveCompatible {}
+
+extension Reactive where Base == WalletController {
+    func setCurrentWallet(_ wallet: Wallet) -> Observable<Wallet?> {
+        return .create { observer in
+            if let wallet = self.base.setCurrentWallet(wallet) {
+                observer.onNext(wallet)
+                observer.onCompleted()
+            } else {
+                observer.onNext(nil)
+                observer.onCompleted()
+            }
+            
+            return Disposables.create()
         }
-        self.currentWallet = wallet
     }
     
+    func update(_ handler: @escaping (Wallet) -> Void) -> Observable<Wallet?> {
+        return .create { observer in
+            if let wallet = self.base.update(handler) {
+                observer.onNext(wallet)
+                observer.onCompleted()
+            } else {
+                observer.onNext(nil)
+                observer.onCompleted()
+            }
+            
+            return Disposables.create()
+        }
+    }
+    
+    func remove(wallet: Wallet) -> Observable<Bool> {
+        return .create { observer in
+            let result = self.base.remove(wallet: wallet)
+            observer.onNext(result)
+            observer.onCompleted()
+            
+            return Disposables.create()
+        }
+    }
+    
+    func add(wallet: Wallet) -> Observable<Bool> {
+        return .create { observer in
+            let result = self.base.add(wallet: wallet)
+            observer.onNext(result)
+            observer.onCompleted()
+            
+            return Disposables.create()
+        }
+    }
 }

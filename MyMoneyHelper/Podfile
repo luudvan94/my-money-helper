@@ -11,6 +11,8 @@ target 'MyMoneyHelper' do
 
   pod 'R.swift'
   pod 'RealmSwift'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'MyMoneyHelperTests' do
     inherit! :search_paths
@@ -18,6 +20,8 @@ target 'MyMoneyHelper' do
 
     pod 'Quick'
     pod 'Nimble'
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
   end
 
   target 'MyMoneyHelperUITests' do

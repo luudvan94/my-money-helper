@@ -25,6 +25,7 @@
 		CDDA3F4B22CD332A0078D7BC /* WalletControllerInMemorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F4A22CD332A0078D7BC /* WalletControllerInMemorySpec.swift */; };
 		CDDA3F5122CD513F0078D7BC /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F5022CD513F0078D7BC /* PaymentController.swift */; };
 		CDDA3F5322CD57470078D7BC /* PaymentControllerInMemorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F5222CD57470078D7BC /* PaymentControllerInMemorySpec.swift */; };
+		CDDA3F5722D22B510078D7BC /* WalletControllerRxTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA3F5422D22B320078D7BC /* WalletControllerRxTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		CDDA3F4A22CD332A0078D7BC /* WalletControllerInMemorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletControllerInMemorySpec.swift; sourceTree = "<group>"; };
 		CDDA3F5022CD513F0078D7BC /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
 		CDDA3F5222CD57470078D7BC /* PaymentControllerInMemorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentControllerInMemorySpec.swift; sourceTree = "<group>"; };
+		CDDA3F5422D22B320078D7BC /* WalletControllerRxTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletControllerRxTest.swift; sourceTree = "<group>"; };
 		D4F99C537300DE1853E832AC /* Pods_MyMoneyHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneyHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 				CDDA3F1A22C24D010078D7BC /* Info.plist */,
 				CDDA3F4A22CD332A0078D7BC /* WalletControllerInMemorySpec.swift */,
 				CDDA3F5222CD57470078D7BC /* PaymentControllerInMemorySpec.swift */,
+				CDDA3F5422D22B320078D7BC /* WalletControllerRxTest.swift */,
 			);
 			path = MyMoneyHelperTests;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 			files = (
 				CDDA3F1922C24D010078D7BC /* MyMoneyHelperTests.swift in Sources */,
 				CDDA3F5322CD57470078D7BC /* PaymentControllerInMemorySpec.swift in Sources */,
+				CDDA3F5722D22B510078D7BC /* WalletControllerRxTest.swift in Sources */,
 				CDDA3F4B22CD332A0078D7BC /* WalletControllerInMemorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
